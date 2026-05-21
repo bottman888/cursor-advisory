@@ -586,6 +586,9 @@
     position: relative;
     transform: translateY(12px);
     transition: transform 220ms ease;
+    max-height: calc(100dvh - 48px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .modal-backdrop.open .modal { transform: translateY(0); }
   .modal .close {
@@ -907,8 +910,8 @@
     <div class="what-grid">
       <div>
         <p class="body lg">We help growing businesses identify where AI can make a measurable difference to running costs, capacity, or growth, and what to do about it.</p>
-        <p class="body" style="font-size: 19px">
-          We come in with <span class="ink" style="color: var(--ink);">no platform to sell</span> and no preferred solution. The assessment stands on its own. You can take the output and act on it however you choose.
+        <p class="body lg">
+          We come in with no platform to sell and no preferred solution. The assessment stands on its own. You can take the output and act on it however you choose.
         </p>
       </div>
 
